@@ -176,19 +176,20 @@ a {
 
 /* Second Section Styling*/
 
-.section2 {
+.section2 ul {
   display: flex;
   justify-content: space-around;
   padding: 2% 20%;
   background-color: #F3F4F6;
 }
 
-.section2 section {
+.section2 ul {
   margin: 0 auto;
 }
 
 .momentum {
   padding-right: 5%;
+  width: 50%;
 }
 .momentum h2 {
   font-size: 3rem;
@@ -210,7 +211,8 @@ a {
 }
 
 .momentumImg img {
-  margin: 0 5%;
+  width: 90%;
+  height: 300px;
 }
 
 
@@ -218,6 +220,7 @@ a {
 
 .section3 {
   margin: 2% 10%;
+  padding: 5% 0;
 }
 
 .section3 ul {
@@ -228,12 +231,15 @@ a {
 .section3 ul li {
   position: relative;
 }
+
+.section3 ul li img {
+  width: 80%;
+}
 .container {
   position: absolute;
-  left: 25%;
+  left: 15%;
   bottom: -0.1px;
   width: 50%;
-
 }
 
 .section3 div {
@@ -268,7 +274,6 @@ a {
 }
 
 .section4 section {
-  padding: 5% 0;
   width: 20%;
   margin: 0 30%;
 }
@@ -324,6 +329,15 @@ a {
   opacity: 0.1;
 }
 
+.box1 img, .box3 img, .box5 img{
+  width: 300px;
+  height: 300px;
+}
+
+.box2 img, .box4 img, .box6 img {
+  width: 300px;
+  height: 600px;
+}
 
 
 
@@ -331,3 +345,115 @@ a {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media all and (max-width: 300px) {
+  header nav ul + a {
+    display: none;
+  }
+
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav img {
+    top: 0;
+  }
+
+  header nav ul li:first-child {
+    margin-top: 20%;
+  }
+
+
+}
+
+@media all and (max-width: 600px) {
+
+  /* Header */
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    justify-content: space-between;
+    padding: 2%;
+  }
+
+  header nav img {
+  position: absolute;
+}
+  
+/* Main */
+.heading {
+  width: 100%;
+  display: inline;
+  padding: 2%;
+  margin-left: 2%;
+  /* color: black; */
+}
+
+.bgImgSec {
+  height: 400px;
+}
+
+.heading h1 {
+  font-size: 2rem;
+}
+
+.heading p {
+  font-size: 0.8rem;
+}
+
+.timings, .coupon {
+  display: none;
+}
+
+.momentumImg {
+  display: none;
+}
+
+.momentum {
+  width: 100%;
+}
+
+
+.section4 section {
+  width: 100%;
+}
+
+.section1 ul, .section3 ul {
+  flex-direction: column;
+}
+}
+
+@media all and (max-width: 1200px) {
+  /* Main */
+.heading {
+  position: static;
+}
+
+.coupon {
+display: none;
+}
+
+.bgImgSec {
+  height: 500px;
+}
+
+.section4 section {
+  width: 100%;
+}
+
+}
+
+@media all and (max-width: 1280px) {
+  /* .divisionSect {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .momentumImg {
+    width: 40%;
+    height: 40%;
+  }
+
+}
