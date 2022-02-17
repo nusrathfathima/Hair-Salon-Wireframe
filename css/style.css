@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -25,8 +25,6 @@ body {
   font-size: 62.5%;
 }
 
-
-
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -36,7 +34,8 @@ header nav {
   margin: 1%;
 }
 
-nav, nav ul {
+nav,
+nav ul {
   display: flex;
   justify-content: space-around;
 }
@@ -108,7 +107,7 @@ a {
   padding: 5% 0;
 }
 .coupon span {
-  margin : 5%;
+  margin: 5%;
   padding: 2% 5%;
   font-size: 0.8rem;
 }
@@ -134,9 +133,9 @@ a {
 
 .timings {
   position: absolute;
-  transform-origin:top right;
-  right:0;
-  top:30%;
+  transform-origin: top right;
+  right: 0;
+  top: 30%;
   transform: rotate(90deg) translateX(50%);
   color: white;
   padding: 2%;
@@ -148,7 +147,6 @@ a {
   margin: 0 15%;
   display: flex;
   justify-content: space-around;
-
 }
 
 .section1 ul li {
@@ -172,15 +170,13 @@ a {
   font-size: 0.8rem;
 }
 
-
-
 /* Second Section Styling*/
 
 .section2 ul {
   display: flex;
   justify-content: space-around;
   padding: 2% 20%;
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
 }
 
 .section2 ul {
@@ -215,7 +211,6 @@ a {
   height: 300px;
 }
 
-
 /* Third Section Styling */
 
 .section3 {
@@ -249,7 +244,7 @@ a {
   padding: 2% 5%;
 }
 
-.container p{
+.container p {
   padding: 3% 10%;
   text-align: center;
 }
@@ -258,8 +253,6 @@ a {
   font-size: 0.8rem;
   font-weight: bold;
 }
-
-
 
 /* Fourth Section Styling  */
 .section4 {
@@ -310,10 +303,10 @@ a {
   padding: 5% 0;
 }
 
-.section5 h3, .section5 span {
+.section5 h3,
+.section5 span {
   font-size: 2.5rem;
 }
-
 
 .divisionSect {
   display: flex;
@@ -329,18 +322,19 @@ a {
   opacity: 0.1;
 }
 
-.box1 img, .box3 img, .box5 img{
+.box1 img,
+.box3 img,
+.box5 img {
   width: 300px;
   height: 300px;
 }
 
-.box2 img, .box4 img, .box6 img {
+.box2 img,
+.box4 img,
+.box6 img {
   width: 300px;
   height: 600px;
 }
-
-
-
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -362,12 +356,9 @@ a {
   header nav ul li:first-child {
     margin-top: 20%;
   }
-
-
 }
 
 @media all and (max-width: 600px) {
-
   /* Header */
   header nav ul {
     flex-direction: column;
@@ -379,81 +370,74 @@ a {
   }
 
   header nav img {
-  position: absolute;
-}
-  
-/* Main */
-.heading {
-  width: 100%;
-  display: inline;
-  padding: 2%;
-  margin-left: 2%;
-  /* color: black; */
-}
+    position: absolute;
+  }
 
-.bgImgSec {
-  height: 400px;
-}
+  /* Main */
+  .heading {
+    width: 100%;
+    display: inline;
+    padding: 2%;
+    margin-left: 2%;
+  }
 
-.heading h1 {
-  font-size: 2rem;
-}
+  .bgImgSec {
+    height: 400px;
+  }
 
-.heading p {
-  font-size: 0.8rem;
-}
+  .heading h1 {
+    font-size: 2rem;
+  }
 
-.timings, .coupon {
-  display: none;
-}
+  .heading p {
+    font-size: 0.8rem;
+  }
 
-.momentumImg {
-  display: none;
-}
+  .timings,
+  .coupon {
+    display: none;
+  }
 
-.momentum {
-  width: 100%;
-}
+  .momentumImg {
+    display: none;
+  }
 
+  .momentum {
+    width: 100%;
+  }
 
-.section4 section {
-  width: 100%;
-}
+  .section4 section {
+    width: 100%;
+  }
 
-.section1 ul, .section3 ul {
-  flex-direction: column;
-}
+  .section1 ul,
+  .section3 ul {
+    flex-direction: column;
+  }
 }
 
 @media all and (max-width: 1200px) {
   /* Main */
-.heading {
-  position: static;
-}
+  .heading {
+    position: static;
+  }
 
-.coupon {
-display: none;
-}
+  .coupon {
+    display: none;
+  }
 
-.bgImgSec {
-  height: 500px;
-}
+  .bgImgSec {
+    height: 500px;
+  }
 
-.section4 section {
-  width: 100%;
-}
-
+  .section4 section {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 1280px) {
-  /* .divisionSect {
-    display: flex;
-    flex-direction: column;
-  } */
-
   .momentumImg {
     width: 40%;
     height: 40%;
   }
-
 }
